@@ -25,9 +25,9 @@ public class MyAdapter extends FragmentPagerAdapter {
             case 1:
                 return new EventsFragment();
             case 2:
-                return new SponsorsFragment();
-            case 3:
                 return new PhotosFragment();
+            case 3:
+                return new SponsorsFragment();
 
 
         }
@@ -48,9 +48,9 @@ public class MyAdapter extends FragmentPagerAdapter {
             case 1:
                 return "EVENTS";
             case 2:
-                return "SPONSORS";
-            case 3:
                 return "PHOTOS";
+            case 3:
+                return "SPONSORS";
         }
 
         return null;

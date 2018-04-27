@@ -1,4 +1,4 @@
-package manukj.manu.final_bnm.LOGIN_UPLOAD;
+package manukj.manu.final_bnm;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-import manukj.manu.final_bnm.R;
+import manukj.manu.final_bnm.LOGIN_UPLOAD.ImageUploadInfo;
 
 /**
  * Created by AndroidJSon.com on 6/18/2017.
@@ -33,7 +33,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_photos, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_items, parent, false);
 
         ViewHolder viewHolder = new ViewHolder(view);
 

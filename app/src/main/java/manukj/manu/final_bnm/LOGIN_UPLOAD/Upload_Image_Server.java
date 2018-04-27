@@ -34,7 +34,7 @@ public class Upload_Image_Server extends AppCompatActivity {
     String Storage_Path = "All_Image_Uploads/";
 
     // Root Database Name for Firebase Database.
-    String Database_Path = "All_Image_Uploads_Database";
+    public static  String Database_Path = "All_Image_Uploads_Database";
     Button ChooseButton, UploadButton;
 
     // Creating EditText.
@@ -180,7 +180,7 @@ public class Upload_Image_Server extends AppCompatActivity {
                             ImageUploadInfo imageUploadInfo = new ImageUploadInfo(TempImageName, taskSnapshot.getDownloadUrl().toString());
 
                             // Getting image upload ID.
-                            String ImageUploadId = databaseReference.push().getKey();
+                            String  ImageUploadId = databaseReference.push().getKey();
 
                             // Adding image upload id s child element into databaseReference.
                             databaseReference.child(ImageUploadId).setValue(imageUploadInfo);

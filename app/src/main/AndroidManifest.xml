@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="manukj.manu.final_bnm">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="manukj.manu.final_bnm.MainActivity"
-            android:label="MBA-BNM"
+            android:label="A-BNM"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +27,7 @@
             android:theme="@style/Theme.Design.NoActionBar"></activity>
         <activity
             android:name="manukj.manu.final_bnm.Event"
-            android:parentActivityName="manukj.manu.final_bnm.MainActivity" />
+            android:parentActivityName="manukj.manu.final_bnm.NavigationActivity" />
         <activity
             android:name="manukj.manu.final_bnm.NavigationActivity"
             android:theme="@style/Theme.Design.NoActionBar" />

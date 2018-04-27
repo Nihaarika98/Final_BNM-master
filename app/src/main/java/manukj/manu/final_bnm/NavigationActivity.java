@@ -21,6 +21,8 @@ import android.widget.ImageView;
 
 import manukj.manu.final_bnm.LOGIN_UPLOAD.Login_Screen;
 
+import static manukj.manu.final_bnm.TabFragment.viewPager;
+
 public class NavigationActivity extends AppCompatActivity {
 
     private static final int REQUEST_CALL = 1;
