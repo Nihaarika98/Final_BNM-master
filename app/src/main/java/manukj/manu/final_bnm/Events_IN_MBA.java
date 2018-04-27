@@ -54,7 +54,8 @@ public class Events_IN_MBA extends Fragment {
         exal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(activity,Excel_Activity.class);
+                startActivity(intent);
             }
         });
         current_Events.setOnClickListener(new View.OnClickListener() {

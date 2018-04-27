@@ -13,18 +13,70 @@
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
         android:fillViewport="true">
-<RelativeLayout
+<LinearLayout
     android:layout_width="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
     android:layout_height="match_parent">
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:text="Department of MBA
+B.N.M Institute of Technology"
+        android:textStyle="bold"
         android:textSize="20dp"
-        android:scrollbars = "vertical"
+        android:fontFamily="@font/jose_blod"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dep"
+        android:layout_width="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dep"
         android:fontFamily="@font/jose"
-        android:layout_margin="20dp"
-        android:text="@string/hello_blank_fragment" />
-</RelativeLayout>
+        android:textSize="20dp"
+        android:id="@+id/details"/>
+    <TextView
+        android:text="Phone"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="@font/jose_blod"
+        android:layout_height="wrap_content"
+        android:id="@+id/Phon"
+        android:layout_below="@id/details"
+        android:layout_width="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dep"
+        android:fontFamily="@font/jose"
+        android:text="91-80-26712424"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:id="@+id/phono">
+    </TextView>
+    <TextView
+        android:text="Email:"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="@font/jose_blod"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/details"
+        android:layout_width="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dep"
+        android:fontFamily="@font/jose"
+
+        android:text="mba_office@bnmit.in
+bnmit.mba@gmail.com"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        >
+    </TextView>
+
+</LinearLayout>
     </ScrollView>
 
 </LinearLayout>

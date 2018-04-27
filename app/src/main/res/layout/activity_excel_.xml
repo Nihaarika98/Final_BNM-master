@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Excel_Activity">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#EF6C00"
+        android:text="ABOUT THE TRAINING"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/about_excel"
+
+        android:fontFamily="@font/jose"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/jose"
+        android:textAlignment="center"
+        android:layout_below="@+id/about_excel"
+        android:id="@+id/description"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:textColor="#EF6C00"
+        android:text="PHOTOS"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/photos"
+        android:fontFamily="@font/jose"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/photos"
+        android:id="@+id/im1"
+        android:src="@drawable/excel1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/im2"
+        android:src="@drawable/excel2"/>
+       </RelativeLayout>
+   </ScrollView>
+
+
+
+</LinearLayout>

@@ -18,7 +18,11 @@ public class Tab_Fragment_For_BNM_MBA extends Fragment {
     public  static TabLayout tabLayout;
     public  static ViewPager viewPager;
     public  static int int_item_in_BNMIT= 3;
-
+    private int[] tabIcons = {
+            R.drawable.about,
+            R.drawable.events,
+            R.drawable.contact
+    };
     public Tab_Fragment_For_BNM_MBA() {
         // Required empty public constructor
     }
@@ -31,6 +35,8 @@ public class Tab_Fragment_For_BNM_MBA extends Fragment {
         tabLayout = (TabLayout) v.findViewById(R.id.tabs);
         viewPager = (ViewPager) v.findViewById(R.id.viewpager);
         //set an adpater
+        tabLayout.setupWithViewPager(viewPager);
+
 
         viewPager.setAdapter(new BnmitAdapter(getChildFragmentManager()));
 

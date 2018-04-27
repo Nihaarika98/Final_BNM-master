@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -30,6 +31,8 @@ Activity activity;
     public void onStart() {
 
         super.onStart();
-            }
+        TextView textView = activity.findViewById(R.id.details);
+        textView.setText("\nPost Box No. 7087,\n12th Main Road, 27th Cross,\nBanashankari II Stage,\n" + "Bangalore – 560 070. \n" + "\n");
+    }
 
 }

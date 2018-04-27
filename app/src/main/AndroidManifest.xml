@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="manukj.manu.final_bnm.MainActivity"
-            android:label="A-BNM"
+            android:name=".MainActivity"
+            android:label="LEAD"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,18 +23,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="manukj.manu.final_bnm.Splash_Screen"
-            android:theme="@style/Theme.Design.NoActionBar"></activity>
-        <activity
-            android:name="manukj.manu.final_bnm.Event"
-            android:parentActivityName="manukj.manu.final_bnm.NavigationActivity" />
-        <activity
-            android:name="manukj.manu.final_bnm.NavigationActivity"
+            android:name=".Splash_Screen"
             android:theme="@style/Theme.Design.NoActionBar" />
-        <activity android:name="manukj.manu.final_bnm.Inaugural" />
-        <activity android:name="manukj.manu.final_bnm.LOGIN_UPLOAD.Login_Screen">
-        </activity>
-        <activity android:name="manukj.manu.final_bnm.LOGIN_UPLOAD.Upload_Image_Server"></activity>
+        <activity
+            android:name=".Event"
+            android:parentActivityName=".NavigationActivity" />
+        <activity
+            android:name=".NavigationActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".Inaugural" />
+        <activity android:name=".LOGIN_UPLOAD.Login_Screen"></activity>
+        <activity android:name=".LOGIN_UPLOAD.Upload_Image_Server" />
+        <activity android:name=".Excel_Activity"
+            android:label="EXCEL WORKSHOP"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
