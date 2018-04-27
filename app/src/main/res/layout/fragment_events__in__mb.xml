@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Events_IN_MBA">
+    <Button
+        style="@style/card_view_style_event_"
+        android:layout_margin="20dp"
+        android:background="@drawable/background"
+        android:id="@+id/past_event"
+        android:text="PAST EVENT"
+        >
+    </Button>
+<Button
+    android:visibility="gone"
+    android:layout_gravity="center"
+    android:text="EXCEL-WORKSHOP"
+    android:id="@+id/excel_workshop"
+    style="@style/card_view_style_events_smaller">
+</Button>
+    <Button
+        android:layout_margin="20dp"
+        android:background="@drawable/background"
+     style="@style/card_view_style_event_"
+        android:text="CURRENT EVENT"
+        android:id="@+id/Current_events">
+    </Button>
+    <Button
+        android:id="@+id/aarohan_from_events"
+        android:visibility="gone"
+        android:text="AAROHAN"
+        android:layout_margin="20dp"
+        android:background="@drawable/background"
+        style="@style/card_view_style_events_smaller">
+    </Button>
+    <Button
+        android:id="@+id/upcoming_events"
+        android:text="..UPCOMING EVENTS"
+        android:layout_margin="20dp"
+        android:background="@drawable/background"
+        style="@style/card_view_style_event_">
+    </Button>
+
+
+</LinearLayout>

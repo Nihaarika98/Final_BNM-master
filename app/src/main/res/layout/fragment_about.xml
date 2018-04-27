@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="aarohan.nihaarika.aarohan.AboutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aarohan"
+                android:id="@+id/title"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lithographic"
+                android:text="Unleash The Brand You Are"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/aarohanlogo"
+                android:id="@+id/logo"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/logo"
+                android:text="About Aarohan"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/lithographic"
+                android:layout_marginTop="20dp"
+                android:id="@+id/about"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/about"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:foregroundGravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/Arohan_About"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

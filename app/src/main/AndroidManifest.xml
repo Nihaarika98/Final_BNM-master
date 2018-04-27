@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="manukj.manu.final_bnm">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="manukj.manu.final_bnm.MainActivity"
+            android:label="MBA-BNM"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="manukj.manu.final_bnm.Splash_Screen"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+        <activity
+            android:name="manukj.manu.final_bnm.Event"
+            android:parentActivityName="manukj.manu.final_bnm.MainActivity" />
+        <activity
+            android:name="manukj.manu.final_bnm.NavigationActivity"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name="manukj.manu.final_bnm.Inaugural" />
+        <activity android:name="manukj.manu.final_bnm.LOGIN_UPLOAD.Login_Screen">
+        </activity>
+        <activity android:name="manukj.manu.final_bnm.LOGIN_UPLOAD.Upload_Image_Server"></activity>
+    </application>
+
+</manifest>
